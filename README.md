@@ -1,3 +1,5 @@
+![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/wokwi_test/badge.svg) ![](../../workflows/fpga/badge.svg)
+
 # Binary to Hex Decoder Project
 Link to Wokwi Project: [Seven Segment Display](https://wokwi.com/projects/451813217808899073)  
 Link to Truth Table and Karnaugh Maps: [Truth Table and Karnaugh Maps](https://docs.google.com/spreadsheets/d/1AqnicXIaCNh9g1GLAmd-MoX33K1gKoY7P84J6AuhUTM/edit?gid=0#gid=0)
