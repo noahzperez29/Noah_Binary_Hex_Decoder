@@ -1,38 +1,50 @@
 # Tiny Tapeout project information (Wokwi project)
 project:
-  wokwi_id:     0       # Set this to the ID of your Wokwi project (the number from the project's URL)
-  title:        ""      # Project title
-  author:       ""      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  ""      # One line description of what your project does
+  title:        "Simple Sprinkler"      # Project title
+  author:       "Noah Perez"      # Your name
+  discord:      "infamousnzp"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "I designed a Binary to Hexidecimal Decoder using a seven-segment LED display that takes inputs A - D and outputs a hexidecimal value between 1 - F."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
+  wokwi_id:     451813217808899073       # Set this to the ID of your Wokwi project (the number from the project's URL)
 
-  # How many tiles your design occupies? A single tile is about 340x160 uM.
+  # How many tiles your design occupies? A single tile is about 340x160 uM.    
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 3x4 or 4x4
 
+how_it_works:  "The system receives a 4-bit binary input representing a hexadecimal value
+                between 1 and F. Based solely on the current input combination, the system
+                must determine which of the seven LED segments should be illuminated to correctly
+                display the corresponding hexadecimal character.
+
+                The system produces seven binary outputs, each corresponding to a specific LED 
+                segment. A segment is illuminated when its output is logic high (1) and dimmed 
+                when its output is logic low (0). Combinations of inputs are defined in the 
+                truth table."
+how_to_test:  "Adjust the inputs to see which combinations toggle numbers or letters.
+               The truth table and kmaps are included in README.md."
+external_hw: "None"
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: ""
-  ui[1]: ""
-  ui[2]: ""
-  ui[3]: ""
+  ui[0]: "A"
+  ui[1]: "B"
+  ui[2]: "C"
+  ui[3]: "D"
   ui[4]: ""
   ui[5]: ""
   ui[6]: ""
   ui[7]: ""
 
   # Outputs
-  uo[0]: ""
-  uo[1]: ""
-  uo[2]: ""
-  uo[3]: ""
-  uo[4]: ""
-  uo[5]: ""
-  uo[6]: ""
+  uo[0]: "A"
+  uo[1]: "B"
+  uo[2]: "C"
+  uo[3]: "D"
+  uo[4]: "E"
+  uo[5]: "F"
+  uo[6]: "G"
   uo[7]: ""
 
   # Bidirectional pins
