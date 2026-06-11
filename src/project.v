@@ -1,7 +1,6 @@
 `default_nettype none
 
-// verilator lint_off UNUSEDSIGNAL
-// verilator lint_off PINCONNECTEMPTY
+
 
 module tt_um_wokwi_451813217808899073(
   input  wire [7:0] ui_in,    // Dedicated inputs
